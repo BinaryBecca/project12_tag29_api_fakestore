@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1>SuperFakeStore</h1>
+
+    <nav>
+      <div class="navElement1">
+        <div id="searchBarTitle">
+          <input type="text" placeholder=" Search by title" id="inputTitle" />
+          <!-- <button type="button" id="searchByTitle">🔍</button> -->
+        </div>
+
+        <div id="categoriesOptions">
+          <select name="sortBy" id="sortBy">
+            <option value="" disabled selected>Sort by</option>
+            <option value="price">price</option>
+            <option value="rating">rating</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="navElement2" id="productCategories">
+        <div>Filter by Categories:</div>
+        <button type="button" id="eletronicsBtn">eletronics</button>
+        <button type="button" id="jeweleryBtn">jewelery</button>
+        <button type="button" id="menClothingBtn">men's clothing</button>
+        <button type="button" id="womenClothingBtn">women's clothing</button>
+      </div>
+    </nav>
+
+    <div id="shopArticles"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
