@@ -124,9 +124,11 @@ fetch(URL_FAKESTORE_API)
         if (selectCategory.value === "price") {
           // console.log(selectCategory)
           // console.log(selectCategory.value)
+          console.log("Sorted Price:", fakestoreProduct.price)
           copyFakestoreArray.sort((a, b) => b.price - a.price)
         } else if (selectCategory.value === "rating") {
           copyFakestoreArray.sort((a, b) => b.rating.rate - a.rating.rate)
+          console.log("Sorted Rating:", fakestoreProduct.rating.rate)
         }
         const showingProductElements = createFakestoreProductElements(fakestoreProduct)
         shopArticles.appendChild(showingProductElements)
