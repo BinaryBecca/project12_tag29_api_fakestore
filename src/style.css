@@ -89,7 +89,6 @@ h1 {
   justify-content: center;
   flex-direction: column;
   border: 1px solid black;
-  height: 400px;
   width: 350px;
   padding: 1rem;
   background-color: antiquewhite;
@@ -102,6 +101,9 @@ h1 {
   /* border: 1px solid black; */
 }
 
-/* productTitle
-productPrice
-productButton */
+.productTitle,
+.productPrice,
+.productButton,
+.productImg {
+  margin-bottom: 1.5rem;
+}

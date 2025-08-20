@@ -179,6 +179,9 @@ fetch(URL_FAKESTORE_API)
     //   })
     // })
   })
+  .catch((error: Error) => {
+    console.error(error)
+  })
 //
 //
 //
